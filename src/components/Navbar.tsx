@@ -36,8 +36,8 @@ export default function Navbar() {
             </button>
           </div>
 
-          <Link href='#about' className='hidden md:block flex-1'>
-            About
+          <Link href="/store" className="text-blue-600 font-semibold hover:underline">
+            Store
           </Link>
           <Link href='#tokenomics' className='hidden md:block flex-1'>
             Tokenomics

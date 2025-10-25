@@ -1,15 +1,10 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Fishcoin",
+  "short_name": "FIS",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
+      "src": "/favicon/Fishcoin.png",
+      "sizes": "256x256",
       "type": "image/png"
     }
   ],

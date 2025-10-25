@@ -1,25 +1,35 @@
 export const CONTRACT = {
-  name: 'Snoppy',
-  symbol: 'SNPY',
-  ca: '0x0000000000000000000000000000000000000000',
-  totalSupply: 1000000000,
+  name: 'Fishcoin',
+  symbol: 'FIS',
+  ca: '0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1',
+  totalSupply: 1000000,
   taxPercentage: 5,
-  ownershipRenounced: true,
+  ownershipRenounced: false,
   description:
-    'Snoppy is a community made and owned Crypto currency project. We are aspiring to become the new high quality standard within the Crypto Space. A group of like minded individuals have come together to create the new golden standard of what a community should have to offer. We have a 5% tax on both buy and sell orders. We are in no way affiliated with Baby or the Baby family. However, we will be donating 5% of our marketing budget to the Baby campaign.',
+    'Fishcoin (FIS) is a utility token used within the Fishcoin ecosystem to redeem rewards, discounts, or exclusive products in participating stores. It is not intended to be a legal tender or a means of payment.',
+
   partners: [
     {
-      name: 'PinkSale',
-      url: 'https://www.pinksale.finance',
-      imgUrl: '/pinksale.png',
+      name: 'What to do to get Fishcoin?',
+      url:'https://youtube.com/embed/5D_DptjEDB0',
+      imgUrl: '/logo.png',   // 🟢 logo bên trái
     },
-    { name: 'DEXView', url: 'https://www.dexview.com', imgUrl: '/dexview.svg' },
-    { name: 'Binance', url: 'https://www.dexview.com', imgUrl: '/dexview.svg' },
-  ],
-  telegram: 'https://t.me/UnKnOwNcHanNeL',
-  twitter: 'https://twitter.com/UnKnOwNcHanNeL',
-  discord: 'https://discord.com/UnKnOwNcHanNeL',
-  logo1: '/Snoppy1.png',
-  logo2: '/Snoppy2.png',
-  logo3: '/Snoppy3.png',
+    { 
+      name: 'Fishcoin in Rabby Wallet',
+      url:'https://youtube.com/embed/5D_DptjEDB0',
+      imgUrl: '/logo.png',   // 🟢 logo bên trái
+    },
+    {
+      name: 'Fishcoin Chain',
+      url: 'https://plasmascan.to/token/0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1?chainid=9745',
+      imgUrl: '/plasma.svg',
+    },
+      ],
+  logo1: '/logo.png',
+  logo2: '/logo.png',
+  logo3: '/logo.png',
+  telegram: "https://t.me/ranchufishfarm",
+  twitter: "https://twitter.com/ranchufishfarm",
+  discord: "https://discord.gg/canocmit33",
 };
+

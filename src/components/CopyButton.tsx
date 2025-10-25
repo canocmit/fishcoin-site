@@ -1,27 +1,54 @@
 'use client';
 
-import toast from 'react-hot-toast';
-import { FiClipboard } from 'react-icons/fi';
+import { useState } from 'react';
+import { FiCopy, FiCheck } from 'react-icons/fi';
 
 export default function CopyButton({ value }: { value: string }) {
-  const copyToClipboard = () => {
-    navigator.clipboard
-      .writeText(value)
-      .then(() => {
-        toast.success('Copied to clipboard');
-      })
-      .catch(() => {
-        toast.error('Oops! Something went wrong');
-      });
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    if (!value) return;
+
+    // Kiểm tra Clipboard API có hỗ trợ không
+    if (navigator.clipboard && window.isSecureContext) {
+      // Nếu có, sử dụng API hiện đại
+      await navigator.clipboard.writeText(value);
+    } else {
+      // Fallback cho các trường hợp khác (CSP chặn hoặc trình duyệt cũ)
+      const textArea = document.createElement('textarea');
+      textArea.value = value;
+      textArea.style.position = 'fixed'; // Giấu textarea ra ngoài màn hình
+      textArea.style.top = '-1000px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+    }
+
+    // Sau khi copy thành công, cập nhật trạng thái
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // Reset sau 2s
   };
+
   return (
     <button
-      type='button'
-      className='js-clipboard p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-blue-500 bg-gray-500 text-white shadow-sm hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
-      onClick={copyToClipboard}
+      onClick={handleCopy}
+      className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 ${
+        copied
+          ? 'bg-green-600 text-white'
+          : 'bg-blue-500 text-white hover:bg-blue-600'
+      }`}
     >
-      <FiClipboard className='size-4' />
-      <span className='copy-text'>copy</span>
+      {copied ? (
+        <>
+          <FiCheck className="text-lg" /> Copied!
+        </>
+      ) : (
+        <>
+          <FiCopy className="text-lg" /> Copy
+        </>
+      )}
     </button>
   );
 }

@@ -3,16 +3,15 @@ const nextConfig = {
   async headers() {
     return [
       {
-        // Apply these headers to all routes in your application.
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
+            key: "X-Frame-Options",
+            value: "ALLOWALL",
           },
           {
-            key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self'", // or "frame-ancestors 'none'"
+            key: "Content-Security-Policy",
+            value: "frame-ancestors *;",
           },
         ],
       },
@@ -21,3 +20,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+

@@ -12,7 +12,7 @@ export function constructMetadata({
   title = CONTRACT.symbol,
   description = CONTRACT.name,
   image = CONTRACT.logo1,
-  icons = '/favicon.ico',
+  icons = '/favicon/Fishcoin.png',
 }: {
   title?: string;
   description?: string;
@@ -30,7 +30,7 @@ export function constructMetadata({
       type: 'website',
       locale: 'en_US',
       url:
-        process.env.NEXT_PUBLIC_SERVER_URL ?? 'https://babybabycoin.vercel.app',
+        process.env.NEXT_PUBLIC_SERVER_URL ?? '',
     },
     twitter: {
       card: 'summary_large_image',
@@ -41,7 +41,7 @@ export function constructMetadata({
     },
     icons,
     metadataBase: new URL(
-      process.env.NEXT_PUBLIC_SERVER_URL ?? 'https://babybabycoin.vercel.app'
+      process.env.NEXT_PUBLIC_SERVER_URL ?? ''
     ),
   };
 }

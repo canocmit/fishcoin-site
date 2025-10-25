@@ -8,15 +8,8 @@ import { CONTRACT } from '@/constant/contract';
 
 export default function Partners() {
   return (
-    <AnimatedSection id='partners' className='py-16'>
+    <AnimatedSection id='partners' className='py-12'>
       <div className='container mx-auto text-center'>
-        <div className='flex flex-col-reverse md:flex-row md:items-center justify-start mx-4 md:mx-6 lg:mx-8'>
-          <h2 className='text-5xl lg:text-7xl font-extrabold mb-8 text-zinc-900 '>
-            Partners
-          </h2>
-          <PiHandshakeThin className='size-32 md:size-42 lg:size-64 px-5 fill-zinc-900' />
-        </div>
-
         <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 m-10 align-middle'>
           {CONTRACT.partners.map((partner, index) => {
             return (

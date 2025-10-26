@@ -94,7 +94,7 @@ export default function SanPhamPage() {
       </div>
 
       {/* 🐟 Danh sách cá */}
-      <h2 className="text-2xl font-bold text-center mb-6">Danh sách cá Fishcoin</h2>
+      <h2 className="text-2xl font-bold text-center mb-6">Fishcoin product</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((fish) => (

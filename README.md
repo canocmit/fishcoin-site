@@ -1,60 +1,82 @@
-# Next.js Cryptocurrency (Memecoin) Template
+# 🐟 Fishcoin (FIS)
 
-<div align="center">
-  <h2>🔋 nextjs-crypto-landingpage</h2>
-  <p>Next.js + Tailwind CSS + TypeScript starter packed with useful component for memecoin landing page.</p>
-  <p>Made by <a href="https://github.com/prorum">prorum</a></p>
-  <p>Preview <a href="https://babybabycoin.vercel.app">site</a></p>
-</div>
+**Fishcoin (FIS)** là token được xây dựng trên **Plasma Network**, với chuẩn **ERC-20** và **decimals = 18**.
+FIS được dùng như **điểm thưởng và phương tiện quy đổi** trong hệ sinh thái cá cảnh thực tế.
 
-## Features
+---
 
-- ⚡️ Next.js 14 with App Router
-- ⚛️ React 18
-- ✨ TypeScript
-- 💨 Tailwind CSS 3
-- 📏 ESLint — Find and fix problems in your code, also will **auto sort** your imports
-- 💖 Prettier — Format your code consistently
-- 🐶 Husky & Lint Staged — Run scripts on your staged files before they are committed
-- 🤖 Conventional Commit Lint — Make sure you & your teammates follow conventional commit
-- 🗺 Site Map — Automatically generate sitemap.xml
+## 🎯 Mục tiêu của Fishcoin
 
-## Getting Started
+* Làm **điểm đổi thưởng** trong các **cửa hàng và cộng đồng cá cảnh**.
+* Kết nối **người nuôi, người chơi và cửa hàng cá cảnh** thông qua nền tảng blockchain minh bạch.
+* Tạo giá trị thực từ **mỗi giao dịch và sản phẩm thật** trong đời sống.
 
-### 1. Install pnpm
+---
 
-```shell
-npm install -g pnpm
-```
+## ⚙️ Thông tin kỹ thuật
 
-### 2. Install dependencies
+| Thông tin            | Chi tiết                        |
+| -------------------- | ------------------------------- |
+| **Tên token**        | Fishcoin                        |
+| **Ký hiệu (Symbol)** | FIS                             |
+| **Mạng**             | Plasma Network                  |
+| **Chuẩn token**      | ERC-20                          |
+| **Decimals**         | 18                              |
+| **Contract Address** | 0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1
 
-```shell
-pnpm install
-```
+---
 
-### 3. Modify the contract data
+## 💡 Ứng dụng
 
-Open src/constant/contract.ts
+Fishcoin được sử dụng làm **điểm thưởng quy đổi** khi mua sản phẩm, thức ăn, hoặc cá cảnh tại các cửa hàng trong hệ sinh thái.
+Người dùng có thể:
 
-### 4. Run the development server
+* Tích lũy FIS khi mua hàng.
+* Dùng FIS để **đổi ưu đãi, vật phẩm, hoặc cá cảnh đặc biệt**.
+* Giao dịch FIS qua ví **Rabby, MetaMask hoặc Plasma Wallet**.
 
-You can start the server using this command:
+---
 
-```shell
-pnpm dev
-```
+## 🚀 Phát triển web
 
-### 5. Commit Message Convention
+Dự án web chính thức được xây dựng bằng **Next.js + Tailwind CSS + TypeScript**.
 
-This starter is using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/), it is mandatory to use it to commit changes.
+### Cách khởi chạy:
 
-## Useful Tools
+1. Cài đặt pnpm
 
-- Favicon Generator: https://favicon.io/favicon-converter (upload your image and paste all files to public/favicon folder)
+   ```bash
+   npm install -g pnpm
+   ```
 
-## Deploy on Vercel
+2. Cài đặt dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   pnpm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Chạy server phát triển
+
+   ```bash
+   pnpm dev
+   ```
+
+4. Cấu hình contract trong
+
+   ```
+   src/constant/contract.ts
+   ```
+
+---
+
+## 🌐 Liên kết
+
+* Website: [https://fishcoin.vercel.app](https://fishcoin.vercel.app)
+* GitHub: [https://github.com/canocmit/fishcoin-site](https://github.com/canocmit/fishcoin-site)
+
+---
+
+## 🧑‍💻 Tác giả
+
+**Cá Nóc Mít** — Nhà phát triển & tư vấn tài chính
+**Mèo Mập** — Nhà đầu tư và người sáng lập ý tưởng Fishcoin

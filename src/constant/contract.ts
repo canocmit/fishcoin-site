@@ -6,7 +6,7 @@ export const CONTRACT = {
   taxPercentage: 5,
   ownershipRenounced: false,
   description:
-    'Fishcoin (FIS) is a utility token used within the Fishcoin ecosystem to redeem rewards, discounts, or exclusive products in participating stores. It is not intended to be a legal tender or a means of payment.',
+    'Fishcoin (FIS) is a form of reward points exchange at aquarium stores, helping customers accumulate points and exchange them for real products.',
 
   partners: [
     {

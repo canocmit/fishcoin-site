@@ -1,14 +1,13 @@
 # 🐟 Fishcoin (FIS)
 
-**Fishcoin (FIS)** là token được xây dựng trên **Plasma Network**, với chuẩn **ERC-20** và **decimals = 18**.
-FIS được dùng như **điểm thưởng và phương tiện quy đổi** trong hệ sinh thái cá cảnh thực tế.
+**Fishcoin (FIS)** là tài sản kỹ thuật số hoạt động trong hệ sinh thái Fishcoin, cho phép người dùng quy đổi sản phẩm và quyền lợi do các cửa hàng đối tác cung cấp. FIS chỉ được thiết kế để sử dụng trong nội bộ hệ thống và không đại diện cho bất kỳ loại tiền pháp định nào.
 
 ---
 
 ## 🎯 Mục tiêu của Fishcoin
 
-* Làm **điểm đổi thưởng** trong các **cửa hàng và cộng đồng cá cảnh**.
-* Kết nối **người nuôi, người chơi và cửa hàng cá cảnh** thông qua nền tảng blockchain minh bạch.
+* Làm **điểm đổi thưởng** trong các **cửa hàng**.
+* Kết nối **người nuôi, người chơi và cửa hàng cá** thông qua nền tảng blockchain minh bạch.
 * Tạo giá trị thực từ **mỗi giao dịch và sản phẩm thật** trong đời sống.
 
 ---
@@ -78,5 +77,5 @@ Dự án web chính thức được xây dựng bằng **Next.js + Tailwind CSS 
 
 ## 🧑‍💻 Tác giả
 
-**Cá Nóc Mít** — Nhà phát triển & tư vấn tài chính
-**Mèo Mập** — Nhà đầu tư và người sáng lập ý tưởng Fishcoin
+
+**Cá Nóc Mít** — Nhà đầu tư và người sáng lập ý tưởng Fishcoin

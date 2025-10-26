@@ -1,4 +1,4 @@
 Cá Oranda Đỏ|/images/products/ca1.png|https://www.youtube.com/embed/xdRFloe5xLo|FIS
-Cá Ranchu Nhật|/images/products/ca2.png||FIS
+Cá Ranchu Nhật|/images/products/ca2.png|https://www.youtube.com/embed/xdRFloe5xLo|FIS
 Cá Ryukin|/images/products/ca3.png||FIS
-Cá Ryukin|/images/products/ca4.png||FIS
+Cá Ryukin|/images/products/ca4.png|https://www.youtube.com/embed/xdRFloe5xLo|FIS

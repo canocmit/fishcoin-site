@@ -12,8 +12,8 @@ interface Product {
 
 export default function SanPhamPage() {
   const [products, setProducts] = useState<Product[]>([]);
-  const [selectedVideo, setSelectedVideo] = useState<string>("");
-  const [introVideo, setIntroVideo] = useState<string>(""); // 🎬 video giới thiệu chính
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [introVideo, setIntroVideo] = useState<string>("");
 
   // 📥 Lấy danh sách sản phẩm
   useEffect(() => {
@@ -28,7 +28,6 @@ export default function SanPhamPage() {
             return { id: index + 1, name, image, price, video };
           });
         setProducts(parsed);
-        if (parsed.length > 0) setSelectedVideo(parsed[0].video);
       })
       .catch((err) => console.error("Lỗi đọc file videos.txt:", err));
   }, []);
@@ -45,7 +44,7 @@ export default function SanPhamPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gray-50 p-6">
+    <main className="min-h-screen bg-gray-50 p-6 relative">
       {/* 🎬 Video giới thiệu chính */}
       <div className="flex justify-center mb-6 mt-4 relative">
         {introVideo ? (
@@ -58,43 +57,16 @@ export default function SanPhamPage() {
             allowFullScreen
           />
         ) : (
-          <div className="text-gray-400 text-center">Đang tải video giới thiệu...</div>
+          <div className="text-gray-400 text-center">
+            Đang tải video giới thiệu...
+          </div>
         )}
       </div>
 
-      {/* 🎥 Video sản phẩm + QR */}
-      <div className="fixed top-10 right-10 z-50 flex flex-col items-center">
-        <iframe
-          key={selectedVideo}
-          className="w-80 h-60 sm:w-96 sm:h-72 lg:w-[400px] lg:h-[300px] rounded-2xl shadow-lg"
-          src={`${selectedVideo}?autoplay=1`}
-          title="Video sản phẩm"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-
-        <div className="flex flex-col items-center mt-3">
-          <Image
-            src="/images/zalo1.jpeg"
-            alt="Zalo QR"
-            width={100}
-            height={100}
-            className="rounded-xl shadow-md"
-          />
-          <a
-            href="https://zalo.me/g/myewdu268"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 font-semibold text-sm mt-1 hover:underline"
-          >
-            👉 Fishcoin product group
-          </a>
-        </div>
-      </div>
-
       {/* 🐟 Danh sách cá */}
-      <h2 className="text-2xl font-bold text-center mb-6">Fishcoin product</h2>
+      <h2 className="text-2xl font-bold text-center mb-6">
+        Fishcoin Product
+      </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((fish) => (
@@ -118,6 +90,28 @@ export default function SanPhamPage() {
           </div>
         ))}
       </div>
+
+      {/* 🎥 Popup Video sản phẩm */}
+      {selectedVideo && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+          <div className="relative bg-black rounded-2xl p-4 shadow-2xl">
+            <button
+              onClick={() => setSelectedVideo(null)}
+              className="absolute top-2 right-2 bg-white text-black font-bold rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-200"
+            >
+              ✕
+            </button>
+            <iframe
+              className="w-[90vw] sm:w-[640px] h-[360px] rounded-xl"
+              src={`${selectedVideo}?autoplay=1`}
+              title="Video sản phẩm"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </main>
   );
 }

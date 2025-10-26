@@ -6,7 +6,7 @@ export const CONTRACT = {
   taxPercentage: 5,
   ownershipRenounced: false,
   description:
-    'Fishcoin (FIS) is a form of reward points exchange at aquarium stores, helping customers accumulate points and exchange them for real products.',
+    'Fishcoin (FIS) is a digital asset that operates within the Fishcoin ecosystem, allowing users to redeem products and enjoy benefits from partner stores. FIS is designed for internal use only and does not represent any fiat currency.',
 
   partners: [
     {

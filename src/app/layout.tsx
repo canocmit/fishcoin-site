@@ -59,7 +59,7 @@ export default function RootLayout({
             Fishcoin Products
           </a>
           <a href="/store" className="text-blue-600 font-semibold hover:underline">
-            🐟 Store
+            About
           </a>
         </header>
         {/* MAIN CONTENT */}

@@ -70,7 +70,7 @@ Dự án web chính thức được xây dựng bằng **Next.js + Tailwind CSS 
 
 ## 🌐 Liên kết
 
-* Website: [https://fishcoin-fis.vercel.app](https://fishcoin-fis.vercel.app)
+* Website: [https://ranchufishfarm.vercel.app](https://ranchufishfarm.vercel.app)
 * GitHub: [https://github.com/canocmit/fishcoin-site](https://github.com/canocmit/fishcoin-site)
 
 ---

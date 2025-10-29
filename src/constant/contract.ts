@@ -11,7 +11,7 @@ export const CONTRACT = {
   partners: [
     {
       name: 'What to do to get Fishcoin?',
-      url:'https://youtube.com/embed/5D_DptjEDB0',
+      url:'https://youtube.com/embed/jUmqGC1idLU',
       imgUrl: '/logo.png',   // 🟢 logo bên trái
     },
     { 

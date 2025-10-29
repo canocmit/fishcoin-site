@@ -9,7 +9,7 @@ interface Post {
   link: string;
 }
 
-export default function StorePage() {
+export default function AboutPage() {
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import StorePage from './store/page';
+import AboutPage from './about/page';
 import { CONTRACT } from '@/constant/contract';
 import Hero from '@/components/Hero';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';

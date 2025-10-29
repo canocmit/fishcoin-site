@@ -10,14 +10,14 @@ export const CONTRACT = {
 
   partners: [
     {
-      name: 'What to do to get Fishcoin?',
-      url:'https://youtube.com/embed/jUmqGC1idLU',
+      name: 'Fishcoin in Oku Trade',
+      url:'https://youtube.com/embed/5D_DptjEDB0',
       imgUrl: '/logo.png',   // 🟢 logo bên trái
     },
     { 
       name: 'Fishcoin in Rabby Wallet',
-      url:'https://youtube.com/embed/5D_DptjEDB0',
-      imgUrl: '/logo.png',   // 🟢 logo bên trái
+      url:'https://oku.trade/?inputChain=plasma&inToken=0x6100E367285b01F48D07953803A2d8dCA5D19873&outToken=0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1',
+      imgUrl: '/okutrade.png',   // 🟢 logo bên trái
     },
     {
       name: 'Fishcoin Chain',

@@ -115,19 +115,6 @@ export default function AboutFishcoinPage() {
         </div>
       </section>
 
-      {/* ROADMAP */}
-      <section className="max-w-4xl mx-auto mb-16">
-        <h2 className="text-2xl font-semibold text-blue-700 mb-4 text-center">
-          🗓 Roadmap
-        </h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Q4 2025: Launch Fishcoin Store beta</li>
-          <li>Q1 2026: Add Fishcoin Wallet & Mobile App</li>
-          <li>Q2 2026: Expand to partner farms in Mekong Delta</li>
-          <li>Q4 2026: Listing on major DEXs</li>
-        </ul>
-      </section>
-
       {/* TEAM */}
       <section className="max-w-4xl mx-auto mb-10 text-center">
         <h2 className="text-2xl font-semibold text-blue-700 mb-4">

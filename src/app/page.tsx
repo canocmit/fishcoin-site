@@ -1,3 +1,4 @@
+import XPLPrice from "@/components/XPLPrice";
 import AboutPage from './about/page';
 import { CONTRACT } from '@/constant/contract';
 import Hero from '@/components/Hero';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <MaxWidthWrapper>
+        <XPLPrice />  {/* Hiện giá góc trái */}
         <Hero />
         <About />
         

@@ -80,10 +80,10 @@ export default function AboutFishcoinPage() {
         </h2>
         <div className="flex flex-wrap justify-center gap-6">
           <a
-            href="https://youtube.com/embed/jUmqGC1idLU"
+            href="https://youtube.com/embed/jUmqGC1idLU?si"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-4 rounded-xl shadow hover:scale-105 transition"
+            className="bg-white p-4 rounded-xl shadow hover:scale-105 transition-all"
           >
             <Image
               src="/logo.png"
@@ -96,12 +96,27 @@ export default function AboutFishcoinPage() {
               Fishcoin in Rabby Wallet
             </p>
           </a>
+          <a
+            href="https://oku.trade/?inputChain=plasma&inToken=0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb&outToken=0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white p-4 rounded-xl shadow hover:scale-105 transition-all"
+          >
+            <Image
+              src="/okutrade.png"
+              alt="DEX Oku Trade "
+              width={80}
+              height={80}
+              className="mx-auto"
+            />
+            <p className="mt-2 font-medium text-gray-800">DEX Oku Trade</p>
+          </a>
 
           <a
             href="https://plasmascan.to/token/0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1?chainid=9745"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-4 rounded-xl shadow hover:scale-105 transition"
+            className="bg-white p-4 rounded-xl shadow hover:scale-105 transition-all"
           >
             <Image
               src="/plasma.svg"
@@ -114,7 +129,15 @@ export default function AboutFishcoinPage() {
           </a>
         </div>
       </section>
-
+      {/* ROADMAP */}
+      <section className="max-w-4xl mx-auto mb-16">
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4 text-center">
+          🗓 Roadmap
+        </h2>
+        <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <li>Q4 2025: : Listing on major DEXs</li>
+        </ul>
+      </section>
       {/* TEAM */}
       <section className="max-w-4xl mx-auto mb-10 text-center">
         <h2 className="text-2xl font-semibold text-blue-700 mb-4">
@@ -162,7 +185,7 @@ export default function AboutFishcoinPage() {
 
       {/* FOOTER */}
       <footer className="text-center text-gray-500 py-6 border-t">
-        © 2025 Fishcoin 🐟 | Built with ❤️ in Hậu Giang
+        © 2025 Fishcoin
       </footer>
     </main>
   );

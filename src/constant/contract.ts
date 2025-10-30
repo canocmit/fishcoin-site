@@ -10,13 +10,13 @@ export const CONTRACT = {
 
   partners: [
     {
-      name: 'Fishcoin in Oku Trade',
-      url:'https://youtube.com/embed/5D_DptjEDB0',
-      imgUrl: '/logo.png',   // 🟢 logo bên trái
+      name: 'Fishcoin in Rabby Wallet',
+      url:'https://youtube.com/embed/jUmqGC1idLU?si',
+      imgUrl: '/images/wallets/rabby.png',   // 🟢 logo bên trái
     },
     { 
-      name: 'Fishcoin in Rabby Wallet',
-      url:'https://oku.trade/?inputChain=plasma&inToken=0x6100E367285b01F48D07953803A2d8dCA5D19873&outToken=0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1',
+      name: 'Fishcoin is now available',
+      url:'https://oku.trade/?inputChain=plasma&inToken=0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb&outToken=0x2E7Fa0C70D63FFfa29c792f406C3a66C01918BA1',
       imgUrl: '/okutrade.png',   // 🟢 logo bên trái
     },
     {
